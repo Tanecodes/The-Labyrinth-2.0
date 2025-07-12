@@ -1,7 +1,15 @@
 export const audio = {
-  storyAudio: new Audio("assets/audio/story-music.mp3") 
+  bgm: {
+    storyAudio: new Audio("assets/audio/background/story-music.mp3"), 
+  },
+  sfx:{
+    btnHover: new Audio("assets/audio/buttons/button-hover.mp3"),
+    btnSelect: new Audio("assets/audio/buttons/button-select.mp3"),
+  }
 };
 
 // audio settings
-audio.storyAudio.loop = true;
-audio.storyAudio.volume = 0.5;
+audio.bgm.storyAudio.loop = true;
+audio.bgm.storyAudio.volume = 0.5;
+audio.sfx.btnSelect.volume = 0.3;
+audio.sfx.btnHover.volume = 0.5;

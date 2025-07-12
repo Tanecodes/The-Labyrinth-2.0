@@ -2,13 +2,11 @@ import { audio } from "../audio.js";
 
 export function setupStartScreen() {
   const startScreen = document.getElementById("startScreen");
-  const enterBtn = document.getElementById("enterBtn");
-  const menuTitle = document.querySelector("menu-title");
+  const startBtn = document.getElementById("startBtn");
 
-  menuTitle.style.display = "block";
-
-  enterBtn.addEventListener("click", () => {
-    audio.storyAudio.play();
+  startBtn.addEventListener("click", () => {
+    audio.sfx.btnSelect.play();
+    audio.bgm.storyAudio.play();
 
     startScreen.classList.add("hidden");
 
