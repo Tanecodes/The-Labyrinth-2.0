@@ -1,0 +1,9 @@
+.menu {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.menu.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

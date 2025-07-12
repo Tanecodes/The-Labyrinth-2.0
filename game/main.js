@@ -1,10 +1,14 @@
-import { SceneManager } from "../scenes/scene-manager.js";
+// imports
+import { SceneManager } from "./scenes/scene-manager.js";
+import { audio } from "./audio.js";
+import { setupStartScreen } from "./start-screen/start-screen.js";
 
-const sceneManager = new SceneManager("sceneContainer");
+  // scene manager setup
+  const sceneManager = new SceneManager("sceneContainer");
 
-const testScene = {
-  name: "mainMenu",
-  background: "assets/backgrounds/main-entrance.png"
-};
-
-sceneManager.loadScene(testScene);
+  const menuScene = {
+    name: "mainMenu",
+    background: "assets/backgrounds/main-entrance.png"
+  };
+  sceneManager.loadScene(menuScene);
+  setupStartScreen();

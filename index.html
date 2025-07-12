@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="game/global-styles.css">
-  <link rel="stylesheet" href="scenes/scene-manager.css">
+  <link rel="stylesheet" href="game/scenes/scene-styles.css">
+  <link rel="stylesheet" href="game/start-screen/start-screen-styles.css">
+  <link rel="stylesheet" href="game/main-menu/main-menu-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <title>The Labyrinth 2.0</title>
 </head>
 <body>
-  <div id="sceneContainer">
-    <div id="startScreen" class="menu">
-      <h1 class="menu-title">THE LABYRINTH</h1>
-      <button id="enterBtn" class="menu-btn">Start</button>
-    </div>
-
-    <div id="mainMenu" class="menu hidden">
-      <h1 class="menu-title">THE LABYRINTH</h1>
-      <div class="menu-buttons">
-        <button id="startGameBtn" class="menu-btn">New Game</button>
-        <button>load game</button>
-        <button>settings</button>
-        <button>exit</button>
-      </div>
-    </div>
-
+  <div id="startScreen" class="menu">
+    <h1 class="menu-title">THE LABYRINTH</h1>
+    <button id="enterBtn" class="menu-btn">Start</button>
   </div>
+
+  <div id="mainMenu" class="menu hidden">
+    <h1 class="menu-title">THE LABYRINTH</h1>
+    <div class="menu-buttons">
+      <button id="startGameBtn" class="menu-btn">New Game</button>
+      <button>load game</button>
+      <button>settings</button>
+      <button>exit</button>
+    </div>
+  </div>
+  <div id="sceneContainer"></div>
 
 <script type="module" src="game/main.js"></script>
 </body>
