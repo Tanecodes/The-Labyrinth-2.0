@@ -1,0 +1,29 @@
+#screenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: whitesmoke;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+
+#screenOverlay.visible {
+  opacity: 1;
+}
+
+.overlayTextBox {
+  opacity: 1;
+  transition: opacity 1s ease;
+  max-width: 70%;
+  padding: 20px;
+}

@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Press Start 2P", sans-serif;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -22,21 +22,4 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 1s ease-in-out;
-}
-
-#screenOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 100;
-  transition: opacity 1s ease;
-}
-
-#screenOverlay:active {
-  opacity: 1;
 }

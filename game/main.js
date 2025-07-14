@@ -2,6 +2,7 @@
 import { SceneManager } from "./scenes/scene-manager.js";
 import { audio } from "./audio.js";
 import { setupStartScreen } from "./start-and-menu/start-screen.js";
+import { showOverlay, hideOverlay } from "../src/effects/overlay.js";
 
   // scene manager setup
   const sceneManager = new SceneManager("sceneContainer");
