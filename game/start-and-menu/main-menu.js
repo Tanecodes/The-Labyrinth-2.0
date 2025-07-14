@@ -1,4 +1,5 @@
 import { showOverlay } from "../../src/effects/overlay.js";
+import { hideOverlay } from "../../src/effects/overlay.js";
 import { audio } from "../audio.js";
 
 export function setupMainMenu() {
@@ -10,11 +11,11 @@ export function setupMainMenu() {
   newGameBtn.addEventListener("click", () => {
     showOverlay({
       text: "in a land where dice rule over weapons is a strange place to be..",
-      autoHide: false,
+      autoHide: true,
       fadeInTime: 1000,
       fadeOutTime: 3000,
       onComplete: () => {
-
+        hideOverlay();
       }
     });
   });

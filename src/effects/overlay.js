@@ -15,12 +15,15 @@
 
     if (text) {
       const textBox = document.createElement("div");
-      textBox.style.opacity = 0;
-      if(textBox.style.opacity = 0) {
-        textBox.classList.add("overlayTextBox");
-      }  
+      textBox.classList.add("overlayTextBox");
       textBox.innerText = text;
       screenOverlay.appendChild(textBox);
+
+      setTimeout(() => {
+        requestAnimationFrame(() => {
+          textBox.classList.add("visible");
+        },);
+      },fadeInTime + textDelay + 1000);
     }
 
     screenOverlay.classList.add("visible");
