@@ -23,3 +23,20 @@ body {
   pointer-events: none;
   transition: opacity 1s ease-in-out;
 }
+
+#screenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 1s ease;
+}
+
+#screenOverlay:active {
+  opacity: 1;
+}
